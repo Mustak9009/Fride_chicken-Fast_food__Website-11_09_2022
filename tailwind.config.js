@@ -2,6 +2,10 @@ module.exports = {
   content: ['./index.html', './src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
+      fontFamily: {
+        Roboto: ['Roboto Mono', 'monospace'],
+        Nunito: ['Nunito', 'sans-serif'],
+      },
       typography: (theme) => ({
         DEFAULT: {
           css: {
