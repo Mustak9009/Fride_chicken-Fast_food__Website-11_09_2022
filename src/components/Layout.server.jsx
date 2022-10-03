@@ -12,12 +12,12 @@ export default function Layout({children}) {
   const shopName = data ? data.shop.name : '';
   return (
     <>
-      <div className="min-h-screen text-gray-700 font-sans">
+      <div className=" text-gray-700 font-sans">
         <Suspense fallback={null}>
           <Header shopName={shopName} pages={pages} />
         </Suspense>
-        <main role='main' id='mainContent' className='bg-gray-50 relative'>
-            <div className='mx-auto max-w-[85rem] p-4 md:py-5 md:px-8'>
+        <main role='main' id='mainContent' className='bg-gray-50 relative border-2'>
+            <div className='mx-auto   md:py-5 md:px-8'>
                 <Suspense fallback={null}>{children}</Suspense>
             </div>
         </main>
